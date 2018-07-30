@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block content %}
+{% if current_user.is_authenticated %}
+  You Can start your session by clicking the button Start!
+{% else %}
+  If you are not registerd please Register And the login!!
+{% endif %}
+{% endblock content %}
